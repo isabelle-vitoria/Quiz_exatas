@@ -1,7 +1,12 @@
 body{
     margin: 0;
-    border: 0;
+   
 } 
+
+* {
+    border-style: none;
+    outline: none;
+}
 
 .container{
     display: grid;
@@ -9,10 +14,7 @@ body{
     grid-template-rows: 700px;
     height: 100vh;
     place-items: center;
-    background-color: #262626;
-    background-image: url("../fotos/cinza.jpg") ;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image:linear-gradient(rgba(244, 244, 244, 0.2), rgba(241, 241, 241, 0.433)), url("../fotos/fundo.png")    ;
 
 }
 
@@ -21,18 +23,18 @@ body{
     flex-direction: column;
     align-items: center;
     padding: 50px;
-    border: solid 2px #034780;
+    border: solid 2px #003049;
     border-radius: 10px;
-    background-color: #f8f8f8;
+    background-color: white;
 }
 
 h1{
     font-size: 50px;
-    color: #a10220;
+    color: #780000;
 }
 
 p{
-    color: #bf0a26;
+    color: #003049;
     font-size: 20px;
     margin-top: 8px;
 }
@@ -41,20 +43,23 @@ input{
     width: 19vw;
     height: 4vh;
     border-radius: 5px;
-    border: solid 2px #034780;
+    border: solid 2px #780000;
+    background-color:#fdf0d5 ;
     border-radius: 25px;
+   
 }
 
 .input2{
     margin-bottom: 25px;
-    border: solid #034780 2px;
+    border: solid #780000 2px;
+    background-color: #fdf0d5;
 }
 
 button{
     border: solid 2px #034780;
     border-radius: 15px;
     font-size: 14px;
-    background-color: #a10220;
+    background-color: #780000;
     color: white;
     width: 10vw;
     height: 5vh;
@@ -63,7 +68,7 @@ button{
 }
 
 a{
-    color:#034780;
+    color:#003049;
     margin-bottom: 05px;
     text-decoration: none;
 }

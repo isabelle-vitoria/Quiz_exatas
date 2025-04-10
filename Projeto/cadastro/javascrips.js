@@ -1,6 +1,5 @@
 const entrar = document.querySelector('#entrar')
 entrar.addEventListener('click', async function (event){
-      event.preventDefaul();
     const nome = document.querySelector('#nome').value
     const email = document.querySelector('#email').value
     const senha = document.querySelector('#senha').value
@@ -10,7 +9,7 @@ entrar.addEventListener('click', async function (event){
     }
 
     else {
-      const resposta = await fetch(`http://192.168.1.50:3000/login`,{
+      const resposta = await fetch(`http://192.168.1.50:3000/usuario`,{
         method: "POST",
         headers: {
           "content-Type": "application/json"
@@ -23,12 +22,13 @@ entrar.addEventListener('click', async function (event){
         })
       })
 
-      if (resposta.status == 200) {
+      if (resposta.status == 201) {
         let mensagem = await resposta.json();
-        alert('Bem vindo!')
+        alert('Cadastrado com sucesso')
+
       }
       else {
-        alert('Usuario e senho incorreta!!')
+        alert('Erro ao cadastrar')
       }
 
     }

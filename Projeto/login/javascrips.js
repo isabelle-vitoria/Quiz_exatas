@@ -9,25 +9,28 @@ entrar.addEventListener('click', async function (event){
     }
 
     else {
-      const resposta = await fetch(`http://192.168.1.50:3000/login`,{
-        method: "POST",
-        headers: {
-          "content-Type": "application/json"
-        },
-        body: JSON.stringify({
-          email: email,
-          senha: senha
 
+      if (email == 'admin@admin' && senha == 12345) {
+        window.location.href = '../Professor/index.html'
+      }
+      else{
+        const resposta = await fetch(`http://192.168.1.50:3000/login`,{
+          method: "POST",
+          headers: {
+            "content-Type": "application/json"
+          },
+          body: JSON.stringify({
+            email: email,
+            senha: senha
+          })
         })
-      })
-
+      }
+    }
       if (resposta.status == 200) {
-        alert('Bem vindo!')
+        window.location.href = '../formulario/index.html'
       }
       else {
-        alert('Usuario e senho incorreta!!')
+        alert('Usuario e senha incorreta!!')
       }
-
-    }
-
     })
+   
