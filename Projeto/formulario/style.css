@@ -1,0 +1,124 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    padding: 10px;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    border: 0;
+    color: black;
+    background-color: rgb(255, 254, 254);
+    transition: backgroud 5s, color o.3s;
+}
+
+body.dark-mode{
+    margin: 0;
+    border: 0;
+    color: white;
+    background-color: rgb(10, 9, 10);
+    box-shadow: 4px 8px rgb(255, 255, 255);
+    border-radius: 10px;
+    transition: backgroud 5s, color o.3s;
+}
+
+header{
+   
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+header.scrolled {
+    background-color:rgb(255, 255, 255); /* Cor de fundo muda quando rola */
+    padding: 10px 10px; /* O padding reduz para dar o efeito de redução de tamanho */
+}
+
+#foto{
+    margin-left: 40px;
+    margin-top: 15px;
+    display: flex;
+    width: 55%;
+}
+
+.log{
+    display: flex;
+    justify-content: end;
+   width: 45%;
+   margin-right: 15px;
+   margin-top: 15px;
+}
+
+#b, #b1{
+    height: 60px;
+    margin: 8px;
+    border-radius: 20px;
+    width: 150px;
+    height: 40px;
+}
+
+#light{
+    margin: 12px;
+    border-radius: 20px;
+    height: 42px;
+}
+
+.t{
+  font-size: 60px;
+  margin-bottom: 10px;
+
+}
+
+p{
+    font-size: 16px;
+}   
+
+.nav{
+    position: relative;
+    top: 120px;
+    width: 100%;
+    background-image: url("../fotos/formulario.png")    ;
+}
+
+.main{
+   position: relative;
+   top: 60px; 
+}
+
+.meio{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.julia{
+    margin-bottom: 80px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+footer{
+    position: relative;
+    top: 50px;
+    flex-direction: column;
+    display: flex;
+}
+
+.informe{
+   
+    
+}
+
+.logofoot{
+   
+}
