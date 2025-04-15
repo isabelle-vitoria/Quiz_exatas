@@ -7,7 +7,7 @@ body.dark-mode{
     margin: 0;
     border: 0;
     color: white;
-    background-corol: rgb(10, 9, 10);
+    background-color: rgb(10, 9, 10);
     box-shadow: 4px 8px rgb(255, 255, 255);
     border-radius: 10px;
     transition: backgroud 5s, color o.3s;
