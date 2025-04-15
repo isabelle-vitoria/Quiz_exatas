@@ -37,9 +37,8 @@ body.dark-mode{
     margin-top: 70px;
 }
 #light {
-    display:flex
+    display:flex;
     justify-content:end;
-    align: start;
   }
   
   #light:hover {
