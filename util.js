@@ -16,4 +16,4 @@ export async function CompararHash(senha, hash) {
     }
 }
 // let hash = await CriarHash('beca123', saltRounds)
-// CompararHash('beca123', hash)
+// CompararHash('beca123', hash)'
